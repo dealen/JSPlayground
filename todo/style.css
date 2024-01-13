@@ -1,0 +1,38 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  #todo-app {
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: calc(100% - 22px); /* Account for padding and borders */
+  }
+  
+  button {
+    padding: 10px 20px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  .editable {
+    width: 70%;
+    border: none;
+    background-color: transparent;
+  }
+  
+  .editable:focus {
+    outline: 1px solid blue;
+  }
