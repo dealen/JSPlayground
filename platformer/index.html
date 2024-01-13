@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Mario Game</title>
+    <style>
+        #gameCanvas {
+            background: blue;
+            width: 800px;
+            height: 400px;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: yellow;
+            bottom: 0;
+            left: 50px;
+        }
+        .obstacle, .pit {
+            position: absolute;
+            bottom: 0;
+        }
+        .obstacle {
+            width: 50px;
+            height: 100px;
+            background: green;
+            left: 300px;
+        }
+        .pit {
+            width: 100px;
+            height: 400px;
+            left: 500px;
+            bottom: -300px;
+            background: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="gameCanvas">
+        <div class="hero"></div>
+        <div class="obstacle"></div>
+        <div class="pit"></div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
